@@ -59,7 +59,8 @@ from inference_utils import inference_pipeline
     inference_pipeline(model_ckpt_path="C:/Users/kadir/dev/ultralytics/yolov8-glasses-sunglasses.pt",
          device="cuda",
          source="test_video.mp4",
-         confidence_threshold=0.25)
+         confidence_threshold=0.25,
+         nms_iou_threshold=0.7)
 ```
 
 ### **Model performance Evaluation**
